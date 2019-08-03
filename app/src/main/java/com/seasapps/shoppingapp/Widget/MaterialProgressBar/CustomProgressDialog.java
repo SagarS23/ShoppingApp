@@ -1,4 +1,4 @@
-package com.app.hfn.widget.materialprogressbar;
+package com.seasapps.shoppingapp.Widget.MaterialProgressBar;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -7,7 +7,7 @@ import android.os.Handler;
 import android.view.View;
 import android.widget.TextView;
 
-import com.app.hfn.R;
+import com.seasapps.shoppingapp.R;
 
 
 /**
@@ -30,9 +30,6 @@ public class CustomProgressDialog extends Dialog {
         mTvProgressTitle.setVisibility(View.GONE);
         this.setCancelable(false);
         mIvAnimation = (CircleProgressBar) findViewById(R.id.ivAnim);
-
-//		mCloverAnimation = (AnimationDrawable) mIvAnimation.getDrawable();SignUpTypeActivity
-
     }
 
     /**
@@ -68,8 +65,6 @@ public class CustomProgressDialog extends Dialog {
 
             @Override
             public void run() {
-
-//				mCloverAnimation.start();
                 mIvAnimation.setVisibility(View.VISIBLE);
 
             }
@@ -79,8 +74,6 @@ public class CustomProgressDialog extends Dialog {
 
     @Override
     public void onWindowFocusChanged(boolean hasFocus) {
-        //Log.v("Dialog focus change", "" + hasFocus);
-//		if (!hasFocus) this.dismiss();
         super.onWindowFocusChanged(hasFocus);
     }
 

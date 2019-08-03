@@ -1,20 +1,4 @@
-/*
- * Copyright (C) 2014 The Android Open Source Project
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
-package com.app.hfn.widget.materialprogressbar;
+package com.seasapps.shoppingapp.Widget.MaterialProgressBar;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -33,7 +17,7 @@ import android.util.AttributeSet;
 import android.view.animation.Animation;
 import android.widget.ImageView;
 
-import com.app.hfn.R;
+import com.seasapps.shoppingapp.R;
 
 
 /**
@@ -41,6 +25,7 @@ import com.app.hfn.R;
  * called before the animation is actually complete and support shadows on older
  * platforms.
  */
+
 public class CircleProgressBar extends ImageView {
 
     private static final int KEY_SHADOW_COLOR = 0x1E000000;
@@ -98,26 +83,6 @@ public class CircleProgressBar extends ImageView {
     private void init(Context context, AttributeSet attrs, int defStyleAttr) {
         final TypedArray a = context.obtainStyledAttributes(
                 attrs, R.styleable.CircleProgressBar, defStyleAttr, 0);
-//        <attr name="mlpb_inner_radius" format="dimension"/>
-//        <attr name="mlpb_background_color" format="color"/>
-//        <attr name="mlpb_progress_color" format="color"/>
-//        <attr name="mlpb_progress_stoke_width" format="dimension"/>
-//        <attr name="mlpb_arrow_width" format="dimension"/>
-//        <attr name="mlpb_arrow_height" format="dimension"/>
-//
-//        <attr name="mlpb_progress" format="integer"/>
-//        <attr name="mlpb_max" format="integer"/>
-//
-//
-//        <attr name="mlpb_progress_text_size" format="dimension"/>
-//        <attr name="mlpb_progress_text_color" format="color"/>
-//
-//        <attr name="mlpb_progress_text_offset" format="dimension"/>
-//
-//        <attr name="mlpb_progress_text_visibility" format="enum">
-//        <enum name="visible" value="0"/>
-//        <enum name="invisible" value="1"/>
-//        </attr>
         final float density = getContext().getResources().getDisplayMetrics().density;
 
         mBackGroundColor = a.getColor(
@@ -161,7 +126,6 @@ public class CircleProgressBar extends ImageView {
         mProgressDrawable = new MaterialProgressDrawable(getContext(), this);
         super.setImageDrawable(mProgressDrawable);
     }
-
 
     private boolean elevationSupported() {
         return android.os.Build.VERSION.SDK_INT >= 21;
@@ -238,9 +202,7 @@ public class CircleProgressBar extends ImageView {
 
     @Override
     final public void setImageResource(int resId) {
-
     }
-
 
     public boolean isShowArrow() {
         return mShowArrow;
@@ -249,7 +211,6 @@ public class CircleProgressBar extends ImageView {
     public void setShowArrow(boolean showArrow) {
         this.mShowArrow = showArrow;
     }
-
 
     @Override
     final public void setImageURI(Uri uri) {
