@@ -3,7 +3,7 @@ package com.seasapps.shoppingapp;
 import android.app.Application;
 import android.content.Context;
 
-import com.seasapps.shoppingapp.Session.Preferences;
+import com.seasapps.shoppingapp.session.Preferences;
 
 public class ShoppingApp extends Application {
 

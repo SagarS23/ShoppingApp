@@ -11,7 +11,7 @@
         android:layout_centerInParent="true"
         android:padding="10dp" >
 
-        <com.seasapps.shoppingapp.Widget.materialprogressbar.CircleProgressBar
+        <com.seasapps.shoppingapp.widget.MaterialProgressBar.CircleProgressBar
             android:id="@+id/ivAnim"
             android:layout_width="55dp"
             android:layout_height="55dp"
@@ -21,7 +21,7 @@
             app:mlpb_progress_stoke_width="3dp"
             app:mlpb_show_arrow="true" />
 
-        <com.seasapps.shoppingapp.Widget.CustomTextViewRegular
+        <com.seasapps.shoppingapp.widget.CustomTextViewRegular
             android:id="@+id/tvProgressTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

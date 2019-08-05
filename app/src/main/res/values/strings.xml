@@ -1,3 +1,32 @@
 <resources>
-    <string name="app_name">ShoppingApp</string>
+    <string name="app_name">Shopping App</string>
+    <string name="login">Login</string>
+    <string name="enter_email_id">Email ID</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="hide_text">HIDE</string>
+    <string name="show_text">SHOW</string>
+    <string name="openDrawer">openDrawer</string>
+    <string name="closeDrawer">closeDrawer</string>
+    <string name="enter_email_address">Enter Email Address</string>
+    <string name="enter_valid_email_address">Enter Valid Email Address</string>
+    <string name="forgot_your_password">Forgot your password?</string>
+    <string name="don_t_have_an_account_signup">Don\'t have an account? SignUp</string>
+    <string name="back"><![CDATA[<< Back]]></string>
+    <string name="send">Send</string>
+    <string name="register">Register</string>
+    <string name="already_registered_login">Already registered? Login</string>
+    <string name="enter_email">Enter Email ID</string>
+    <string name="choose_password">Choose Password</string>
+    <string name="signup">Signup</string>
+    <string name="password_must_be">Password must be 6 to 12 characters</string>
+    <string name="registration_success">Registration Success</string>
+    <string name="failed_try_again">Authentication failed, try again</string>
+    <string name="login_successfully">Login Successfully</string>
+    <string name="press_back_again_to_exit">Press back again to exit</string>
+    <string name="logout">Logout</string>
+    <string name="alert">Alert</string>
+    <string name="do_you_want_to_logout">Do you want to logout?</string>
+    <string name="cancel">Cancel</string>
+    <string name="logout_successfully">Logout Successfully</string>
+
 </resources>

@@ -1,4 +1,4 @@
-package com.seasapps.shoppingapp.Session;
+package com.seasapps.shoppingapp.session;
 
 import android.content.Context;
 import android.content.SharedPreferences;

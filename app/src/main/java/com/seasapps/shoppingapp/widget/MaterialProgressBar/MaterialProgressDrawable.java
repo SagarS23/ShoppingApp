@@ -1,5 +1,5 @@
 
-package com.seasapps.shoppingapp.Widget.MaterialProgressBar;
+package com.seasapps.shoppingapp.widget.MaterialProgressBar;
 
 import android.content.Context;
 import android.content.res.Resources;
