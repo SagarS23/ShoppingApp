@@ -26,6 +26,10 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
+/**
+ * Login Activity
+ */
+
 public class LoginActivity extends AppCompatActivity {
 
     @BindView(R.id.et_email)

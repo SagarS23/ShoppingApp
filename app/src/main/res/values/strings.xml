@@ -28,5 +28,24 @@
     <string name="do_you_want_to_logout">Do you want to logout?</string>
     <string name="cancel">Cancel</string>
     <string name="logout_successfully">Logout Successfully</string>
-
+    <string name="more_products">More Products</string>
+    <string name="select_address">Select Address</string>
+    <string name="dialog_permission_title">Grant Permissions</string>
+    <string name="dialog_permission_message">This app needs permission to use this feature. You can grant them in app settings.</string>
+    <string name="go_to_settings">GOTO SETTINGS</string>
+    <string name="product_details">Product Details</string>
+    <string name="use_this_location">Use this location</string>
+    <string name="address_saved">Address saved</string>
+    <string name="fa_rupee">&#xf156;</string>
+    <string name="buy">Buy</string>
+    <string name="offers">Offers</string>
+    <string name="place_order">Place Order</string>
+    <string name="confirm_order">Confirm Order</string>
+    <string name="are_you_sure_do_you_want_to_place_your_order">Are you sure do you want to place your order?</string>
+    <string name="data_stored_successfully">Order placed successfully</string>
+    <string name="order_placed">Order Placed</string>
+    <string name="thank_you">Thank you</string>
+    <string name="thanks_for_using_shopping_app">Thanks for using Shopping App!</string>
+    <string name="continue_to_shopping">Continue to shopping</string>
+    <string name="please_select_address">Please select address</string>
 </resources>

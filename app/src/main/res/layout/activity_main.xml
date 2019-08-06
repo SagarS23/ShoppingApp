@@ -4,7 +4,7 @@
     android:id="@+id/main_content"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#f0f0f0"
+    android:background="@color/white"
     android:fitsSystemWindows="true">
 
     <android.support.v4.widget.DrawerLayout
@@ -18,17 +18,14 @@
             android:id="@+id/rootFrame"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/white">
+            android:background="@color/font_black_6">
 
             <android.support.v7.widget.Toolbar
                 android:id="@+id/toolbar"
                 style="@style/ToolbarDrawerIcon"
                 android:layout_width="fill_parent"
                 android:layout_height="?attr/actionBarSize"
-                android:background="@color/colorPrimary"
-                android:elevation="3dp"
-                android:visibility="visible"
-                app:layout_collapseMode="pin">
+                android:background="@color/colorPrimary">
 
                 <com.seasapps.shoppingapp.widget.CustomTextViewRegular
                     android:id="@+id/tv_toolbarTitle"
@@ -39,6 +36,65 @@
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="@color/white" />
             </android.support.v7.widget.Toolbar>
+
+            <com.seasapps.shoppingapp.adapter.PagerContainer
+                android:id="@+id/pager_container"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_below="@+id/toolbar"
+                android:background="@color/colorPrimaryDark">
+
+                <com.seasapps.shoppingapp.widget.LoopViewPager
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="5dp" />
+
+            </com.seasapps.shoppingapp.adapter.PagerContainer>
+
+            <me.relex.circleindicator.CircleIndicator
+                android:id="@+id/indicator"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_below="@+id/pager_container"
+                android:layout_marginTop="-50dp" />
+
+            <View
+                android:id="@+id/upper_view"
+                android:layout_width="60dp"
+                android:layout_height="1dp"
+                android:layout_below="@+id/indicator"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@color/font_black_1" />
+
+            <com.seasapps.shoppingapp.widget.CustomTextViewRegular
+                android:id="@+id/tv_more_products"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/upper_view"
+                android:layout_centerHorizontal="true"
+                android:text="@string/more_products"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black" />
+
+            <View
+                android:id="@+id/lower_view"
+                android:layout_width="60dp"
+                android:layout_height="1dp"
+                android:layout_below="@+id/tv_more_products"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:background="@color/font_black_1" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_more_products"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lower_view"
+                android:layout_marginTop="5dp" />
 
         </RelativeLayout>
 

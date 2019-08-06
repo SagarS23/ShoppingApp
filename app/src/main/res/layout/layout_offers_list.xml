@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:id="@+id/mrl_buy"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            app:mrl_rippleAlpha="0.2"
+            app:mrl_rippleColor="@color/buttonRipple"
+            app:mrl_rippleDelayClick="false"
+            app:mrl_rippleHover="true"
+            app:mrl_rippleOverlay="true">
+
+            <com.seasapps.shoppingapp.widget.CustomButtonRegular
+                android:id="@+id/btn_buy"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/round_border_solid_btn"
+                android:text="@string/place_order"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/mrl_buy"
+            android:background="?android:attr/selectableItemBackground"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.seasapps.shoppingapp.widget.CustomTextViewAwesome
+                    android:id="@+id/tv_rupee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/fa_rupee"
+                    android:textColor="@color/font_black_0"
+                    android:textSize="15sp" />
+
+                <com.seasapps.shoppingapp.widget.CustomTextViewRegular
+                    android:id="@+id/tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@+id/tv_rupee"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/font_black_0"
+                    android:textSize="16sp"
+                    tools:text="250" />
+
+            </RelativeLayout>
+
+
+            <com.seasapps.shoppingapp.widget.CustomTextViewRegular
+                android:id="@+id/tv_delivery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/font_black_0"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="FREE Delivery" />
+
+            <com.seasapps.shoppingapp.widget.CustomTextViewRegular
+                android:id="@+id/tv_seller_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/font_black_0"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="Navkar Kirana" />
+
+            <com.seasapps.shoppingapp.widget.CustomTextViewRegular
+                android:id="@+id/tv_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/font_black_0"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="75% positive" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

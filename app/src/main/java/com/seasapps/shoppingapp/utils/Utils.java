@@ -7,6 +7,9 @@ import android.widget.Toast;
 import com.seasapps.shoppingapp.R;
 import com.seasapps.shoppingapp.widget.styleabletoast.StyleableToast;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -55,5 +58,28 @@ public class Utils {
 
     public static void showLongToast(Context context, String message) {
         Toast.makeText(context, message, Toast.LENGTH_LONG).show();
+    }
+
+    public static int[] mResources = {
+            R.drawable.ic_baby_cerelac,
+            R.drawable.ic_britannia_toast,
+            R.drawable.ic_cadbury_celebrations,
+            R.drawable.ic_corn_flakes,
+            R.drawable.ic_kelloggs_chocos,
+            R.drawable.ic_kelloggs_fruit_nut,
+            R.drawable.ic_safal,
+            R.drawable.ic_sunfeast_biscuit,
+            R.drawable.ic_tasties_biscuits,
+            R.drawable.ic_tomato_soup
+    };
+
+    public static String getCurrentTimeStamp() {
+        try {
+            SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.ENGLISH);
+            return dateFormat.format(new Date());
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
     }
 }
